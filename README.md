@@ -4,3 +4,5 @@
 No início do controle de versão em rede, predominavam os sistemas Centralizados (CVCS), como o SVN e o CVS. Eles tinham um ponto único de falha: se o servidor caísse, o trabalho colaborativo parava e todo o histórico corria risco.
 **Versão 2.0 - A Criação do Git (2005)**
 Linus Torvalds criou o Git em 2005 para gerenciar o kernel Linux. Ele exigia velocidade extrema, um design inerentemente distribuído e garantia criptográfica de integridade de dados (SHA-1), características que faltavam nos CVCS.
+**Versão 3.0 - Arquitetura e Segurança**
+O Git usa um modelo de dados baseado em **snapshots** (instantâneos) completos do projeto, não em *deltas*. Essa é a chave para sua velocidade e eficiência. A segurança e a integridade de todo o histórico são garantidas pelo **hash SHA-1**, que gera uma assinatura digital imutável para cada *commit*.
